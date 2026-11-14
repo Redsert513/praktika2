@@ -30,8 +30,41 @@
 
 ```bash
 
-.\\run.bat -p Newtonsoft.Json -s https://api.nuget.org/v3/index.json
+.\\\\\\\\\\\\\\\\run.bat -p Newtonsoft.Json -s https://api.nuget.org/v3/index.json
 
 "# Configur.p2" 
 "# Configur.p2" 
 "# Configur.p2" 
+
+## Структура проекта
+
+
+
+```text
+
+my-shell/
+
+├── src/
+
+│   ├── \_\_init\_\_.py                # Делает папку src модулем Python
+
+│   ├── pypi.py.py                 # работа с PyPI API
+
+│   └── main.py                    # Главный файл
+
+├── tests/
+
+│   ├── \_\_init\_\_.py                # Делает папку tests модулем Python
+
+│   ├── test\_pypi.bat  		    # тесты парсера PyPI
+
+│   └── sample\_pypi.json          # тестовый JSON от PyPI
+
+├── run.bat                        # Скрипт запуска для Windows
+
+├── README.md                      # Документация проекта
+
+└── .gitignore                     # Список файлов, игнорируемых Git
+
+```
+
